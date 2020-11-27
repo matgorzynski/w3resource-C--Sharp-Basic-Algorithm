@@ -1,4 +1,21 @@
-﻿using System;
+﻿/*
+ * 
+ * Write a C# Sharp program to check two given integers, and return true if one of them is 30 or if their sum is 30.
+ * 
+ * Sample Input:
+ * 30, 0
+ * 25, 5
+ * 20, 30
+ * 20, 25
+ * Expected Output:
+ * True
+ * True
+ * True
+ * False
+ * 
+ */
+
+using System;
 
 namespace p._003
 {

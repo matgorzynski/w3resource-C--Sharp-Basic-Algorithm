@@ -1,4 +1,18 @@
-﻿using System;
+﻿/*
+ * 
+ * Write a C# Sharp program to check a given integer and return true if it is within 10 of 100 or 200.
+ * 
+ * Sample Input:
+ * 103
+ * 90
+ * 89
+ * Expected Output:
+ * True
+ * True
+ * False
+ * 
+ */
+using System;
 
 namespace p._004
 {
