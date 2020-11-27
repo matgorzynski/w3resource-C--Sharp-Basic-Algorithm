@@ -1,42 +1,37 @@
 ﻿/*
  * 
- * Write a C# Sharp program to exchange the first and last characters in a given string and return the new string.
+ * Write a C# Sharp program to create a new string which is 4 copies of the 2 front characters of a given string. 
+ * If the given string length is less than 2 return the original string.    
  * 
  * Sample Input:
- * "abcd"
+ * "C Sharp"
+ * "JS"
  * "a"
- * "xy"
  * Expected Output:
- * 
- * dbca
- * a
- * yx
+ * C C C C 
+ * JSJSJSJS
  * a
  * 
  */
 
 using System;
+using System.Linq;
 
-namespace p._007
+namespace p._008
 {
     class Program
     {
-        static void Main()
+        static void Main(string[] args)
         {
             string line = Console.ReadLine();
             while(line!="")
             {
-                if(line.Length==1)
-                {
+                if (line.Length == 1)
                     Console.WriteLine(line);
-                }
                 else
-                {
-                    Console.WriteLine(line.Substring(line.Length - 1) + line.Substring(1, line.Length - 2) + line.Substring(0, 1));
-                }
+                    Console.WriteLine(string.Concat(Enumerable.Repeat(line.Substring(0, 2), 4)));
 
                 line = Console.ReadLine();
-
             }
         }
     }
